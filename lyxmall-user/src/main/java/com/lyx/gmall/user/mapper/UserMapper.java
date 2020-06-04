@@ -1,6 +1,8 @@
 package com.lyx.gmall.user.mapper;
 
-import com.lyx.gmall.user.bean.UmsMember;
+
+
+import com.lyx.lyxmall.bean.UmsMember;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;

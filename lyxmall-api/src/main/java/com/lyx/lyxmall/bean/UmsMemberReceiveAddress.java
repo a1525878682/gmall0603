@@ -1,4 +1,4 @@
-package com.lyx.gmall.user.bean;
+package com.lyx.lyxmall.bean;
 
 import javax.persistence.Id;
 import java.io.Serializable;

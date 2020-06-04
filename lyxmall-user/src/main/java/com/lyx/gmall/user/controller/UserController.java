@@ -1,15 +1,14 @@
 package com.lyx.gmall.user.controller;
 
-import com.lyx.gmall.user.bean.UmsMember;
-import com.lyx.gmall.user.bean.UmsMemberReceiveAddress;
-import com.lyx.gmall.user.service.UserService;
+
+import com.lyx.lyxmall.bean.UmsMember;
+import com.lyx.lyxmall.bean.UmsMemberReceiveAddress;
+import com.lyx.lyxmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.xml.ws.RequestWrapper;
 import java.util.List;
 
 @Controller
@@ -28,7 +27,7 @@ public class UserController {
 
     @RequestMapping("findByAdds")
     @ResponseBody
-    public List<UmsMemberReceiveAddress> findByAdds( String memberId) {
+    public List<UmsMemberReceiveAddress> findByAdds(String memberId) {
         List<UmsMemberReceiveAddress> list = userService.findByAdds(memberId);
         return list;
     }

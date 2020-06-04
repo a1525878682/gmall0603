@@ -1,10 +1,12 @@
 package com.lyx.gmall.user.service.impl;
 
-import com.lyx.gmall.user.bean.UmsMember;
-import com.lyx.gmall.user.bean.UmsMemberReceiveAddress;
+
+
 import com.lyx.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.lyx.gmall.user.mapper.UserMapper;
-import com.lyx.gmall.user.service.UserService;
+import com.lyx.lyxmall.bean.UmsMember;
+import com.lyx.lyxmall.bean.UmsMemberReceiveAddress;
+import com.lyx.lyxmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;

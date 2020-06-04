@@ -1,7 +1,8 @@
-package com.lyx.gmall.user.service;
+package com.lyx.lyxmall.service;
 
-import com.lyx.gmall.user.bean.UmsMember;
-import com.lyx.gmall.user.bean.UmsMemberReceiveAddress;
+
+import com.lyx.lyxmall.bean.UmsMember;
+import com.lyx.lyxmall.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 

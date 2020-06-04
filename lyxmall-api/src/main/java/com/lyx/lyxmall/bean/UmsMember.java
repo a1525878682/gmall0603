@@ -1,16 +1,12 @@
-package com.lyx.gmall.user.bean;
+package com.lyx.lyxmall.bean;
 
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
-public class UmsMember {
+public class UmsMember implements Serializable {
 
     @Id
-    //使用mapper组件的缺点：在使用通用mapper组件的时候，insert能返回主键id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     private String memberLevelId;
     private String username;
