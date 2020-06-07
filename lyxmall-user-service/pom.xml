@@ -7,10 +7,10 @@
         <artifactId>lyxmall-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.lyx.gmall</groupId>
-    <artifactId>lyxmall-user</artifactId>
+    <groupId>com.lyx.lyxmall</groupId>
+    <artifactId>lyxmall-user-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lyxmall-user</name>
+    <name>lyxmall-user-service</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -18,19 +18,6 @@
     </properties>
 
     <dependencies>
-
-
-        <dependency>
-            <groupId>com.lyx.lyxmall</groupId>
-            <artifactId>lyxgamll-common-util</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.lyx.lyxmall</groupId>
-            <artifactId>lyxmall-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
 
         <dependency>
             <groupId>com.lyx.lyxmall</groupId>
@@ -40,10 +27,14 @@
 
         <dependency>
             <groupId>com.lyx.lyxmall</groupId>
-            <artifactId>lyxmall-web-util</artifactId>
+            <artifactId>lyxmall-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.lyx.lyxmall</groupId>
+            <artifactId>lyxmall-common-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 
@@ -55,5 +46,36 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>

@@ -3,14 +3,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
+
         <groupId>com.lyx.lyxmall</groupId>
         <artifactId>lyxmall-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.lyx.gmall</groupId>
-    <artifactId>lyxmall-user</artifactId>
+    <groupId>com.lyx.lyxmall</groupId>
+    <artifactId>lyxmall-user-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lyxmall-user</name>
+    <name>lyxmall-user-web</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -18,11 +19,9 @@
     </properties>
 
     <dependencies>
-
-
         <dependency>
             <groupId>com.lyx.lyxmall</groupId>
-            <artifactId>lyxgamll-common-util</artifactId>
+            <artifactId>lyxmall-web-util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -30,20 +29,6 @@
             <artifactId>lyxmall-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
-
-        <dependency>
-            <groupId>com.lyx.lyxmall</groupId>
-            <artifactId>lyxmall-service-util</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.lyx.lyxmall</groupId>
-            <artifactId>lyxmall-web-util</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
 
     </dependencies>
 
